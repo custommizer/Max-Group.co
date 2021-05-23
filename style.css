@@ -1,0 +1,736 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(26, 26, 26);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.nav-btn {
+    border: none;
+    background-color: none;
+    border-radius: 200px;
+}
+
+.nav-btn img {
+    width: 65px;
+    height: 65px;
+    border-radius: 100px;
+}
+
+header {
+    margin-top: 0;
+    background: none;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    padding: 10px;
+}
+
+.wrapper {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 18%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    z-index: 110;
+    transition: 0.5s;
+    transform: translateX(-100%);
+}
+
+.menu_active {
+    transform: translateX(0%);
+}
+
+.menu_disabled {
+    transform: translateX(-100%);
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+}
+
+.menu-list a {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu button img {
+    width: 50px;
+    height: 50px;
+}
+
+.menu button {
+    border-radius: 50px;
+    padding: 0;
+    border: none;
+    background-color: white;
+    position: relative;
+    top: -40px;
+}
+
+.home {
+    background: url('https://www.creativefabrica.com/wp-content/uploads/2020/04/09/Night-city-background-with-many-building-Graphics-3832778-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-inner {
+    padding-top: 500px;
+    padding-bottom: 200px;
+}
+
+.icons img {
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    padding: 9px;
+}
+
+.home-title {
+    color: rgb(246, 238, 255);
+    position: relative;
+    top: -250px;
+    text-align: center;
+}
+
+.home-title p {
+    background-color: none;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 25px;
+    border: 2px solid rgb(255, 253, 253);
+}
+
+.home-title h1 {
+    font-size: 90px;
+    margin-bottom: 60px;
+    color: rgb(248, 241, 255);
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.home-title button {
+    width: 200px;
+    padding: 20px;
+    margin-top: 80px;
+    font-size: 20px;
+    border-radius: 50px;
+    color: rgb(226, 200, 225);
+    background-color: rgb(26, 26, 26);
+    border: 2px solid rgb(190, 189, 189);
+}
+
+.home-title button:hover {
+    transform: scale(1.2);
+    transition: 0.2s ease-in-out;
+    background-color: rgb(1, 122, 7);
+}
+
+.home-title button a {
+    text-decoration: none;
+    color: white;
+}
+
+.company-inner {
+    padding: 200px 0;
+}
+
+.guide {
+    background: url('https://wallpaperaccess.com/full/1092587.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.company {
+    display: flex;
+    padding: 40px 40px;
+    border: 2px solid white;
+    background: none;
+    border-radius: 20px;
+}
+
+.company-title {
+    color: rgb(255, 255, 255);
+    width: 40%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.company-title h1 {
+    font-size: 48px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.company-title p {
+    font-size: 24px;
+}
+
+.company-image {
+    width: 40%;
+    margin-top: 70px;
+    margin-left: 100px;
+}
+
+.company-image img {
+    border-radius: 40px;
+    width: 640px;
+    height: 500px;
+}
+
+.resume-button {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.resume-button button {
+    padding: 15px;
+    font-size: 25px;
+    width: 200px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 50px;
+    border: 1px solid rgb(204, 201, 201);
+}
+
+.resume-button button:hover {
+    transform: scale(1.2);
+    transition: 0.2s ease-in-out;
+    background-color: rgb(1, 122, 7);
+}
+
+.resume-button button a {
+    text-decoration: none;
+    color: white;
+}
+
+.lawyer-inner h2 {
+    color: rgb(24, 24, 24);
+    padding: 10px;
+    font-size: 40px;
+    background-color: none;
+    border: rgb(24, 24, 24) 2px solid;
+    text-align: center;
+    border-radius: 50px;
+    position: relative;
+    top: -100px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.lawyer-inner h3 {
+    color: rgb(24, 24, 24);
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid rgb(24, 24, 24);
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.lawyer-inner {
+    padding: 250px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.lawyer img {
+    border-radius: 40px;
+}
+
+.lawyer {
+    width: 28%;
+    padding: 5px;
+    background-color: none;
+    padding-top: 20px;
+    border-radius: 12px;
+    color: rgb(24, 24, 24);
+    border: rgb(24, 24, 24) solid 2px;
+}
+
+.lawyer:hover {
+    transform: scale(1.2);
+    transition: 0.2s ease-in-out;
+}
+
+.lawyer-button button:hover {
+    transform: scale(1.2);
+    transition: 0.2s ease-in-out;
+    background-color: rgb(1, 122, 7);
+}
+
+.lawyer-list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.lawyer h1 {
+    color: rgb(24, 24, 24);
+    font-size: 30px;
+}
+
+.champions {
+    background: url('https://www.xmple.com/wallpaper/linear-blue-purple-gradient-1920x1080-c2-6495ed-ba55d3-a-90-f-14.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lawyer-button button {
+    width: 250px;
+    padding: 20px;
+    margin-top: 80px;
+    font-size: 18px;
+    border-radius: 50px;
+    color: rgb(226, 200, 225);
+    background-color: rgb(26, 26, 26);
+    border: 2px solid rgb(190, 189, 189);
+}
+
+.lawyer-button {
+    text-align: center;
+}
+
+.lawyer-button button a {
+    text-decoration: none;
+    color: white;
+}
+
+.succes-imag img {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 35px;
+}
+
+.succes-imag {
+    width: 30%;
+}
+
+.succes-title {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.succes-t {
+    width: 70%;
+}
+
+.succes-t p {
+    font-size: 24px;
+}
+
+.succes-t h1 {
+    font-size: 48px;
+}
+
+.succes-inner h2 {
+    margin-top: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.succes {
+    padding: 150px 0;
+}
+
+.succes-image {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+
+.succes-image img {
+    width: 30%;
+    padding: 10px;
+    border: 2px solid rgb(24, 24, 24);
+    border-radius: 10px;
+}
+
+.succes-image img:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+
+.tournament {
+    background: url('https://www.teahub.io/photos/full/28-285943_wallpaper-linear-white-gradient-blue-highlight-light-blue.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.how {
+    background: url('https://www.xmple.com/wallpaper/blue-white-gradient-linear-1920x1080-c2-fffaf0-00008b-a-300-f-14.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.how-inner {
+    padding: 150px 0;
+}
+
+.how-title {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.how-title h1 {
+    font-size: 48px;
+    color: white;
+}
+
+.how-title p {
+    font-size: 24px;
+    color: white;
+}
+
+.how-image img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.how-button button {
+    width: 250px;
+    padding: 20px;
+    margin-top: 80px;
+    font-size: 20px;
+    border-radius: 50px;
+    color: rgb(226, 200, 225);
+    background-color: rgb(26, 26, 26);
+    border: 2px solid rgb(190, 189, 189);
+}
+
+.how-button {
+    text-align: center;
+}
+
+.how-button button:hover {
+    transform: scale(1.2);
+    transition: 0.2s ease-in-out;
+    background-color: rgb(1, 122, 7);
+}
+
+.how-button button a {
+    text-decoration: none;
+    color: white;
+}
+
+.video {
+    background: url('https://hookagency.com/wp-content/uploads/2015/11/hazemaster-gray-gradient-ui-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video-inner {
+    padding: 150px 0;
+}
+
+.video-title {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.video-title h1 {
+    font-size: 48px;
+}
+
+.video-title p {
+    font-size: 24px;
+}
+
+.video-video iframe {
+    width: 100%;
+    height: 700px;
+}
+
+.sub {
+    background: url('https://wallpapercave.com/wp/wp5503100.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sub-inner {
+    padding: 150px 0;
+    text-align: center;
+}
+
+.sub-title {
+    padding: 40px;
+    background-color: rgb(252, 253, 252);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sub-title h1 {
+    font-size: 48px;
+}
+
+.sub-title p {
+    font-size: 24px;
+}
+
+.sub-input {
+    background-color: rgb(255, 255, 255);
+}
+
+.sub-input input {
+    margin: 30px;
+    font-size: 20px;
+    width: 60%;
+    height: 60px;
+    border: none;
+    border-bottom: solid 2px rgb(0, 0, 0);
+    background: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Exo 2', sans-serif;
+    border-radius: 5px;
+}
+
+.sub-input button {
+    width: 220px;
+    margin-bottom: 30px;
+    padding: 15px;
+    font-size: 18px;
+    background-color: rgb(0, 0, 93);
+    color: white;
+    border-radius: 50px;
+    border: 1px solid rgb(5, 5, 5);
+}
+
+.sub-input button:hover {
+    transform: scale(1.2);
+    transition: 0.2s ease-in-out;
+    background-color: rgb(1, 122, 7);
+}
+
+.footer-inner {
+    padding: 30px 0;
+    font-family: 'Montserrst', sans-serif;
+}
+
+.footer-title h2 {
+    text-align: left;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.footer-item {
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.footer-title {
+    width: 45%;
+    color: white;
+    position: relative;
+    right: -100px;
+}
+
+.footer-title p {
+    font-size: 30px;
+}
+
+.footer-map {
+    width: 45%;
+    position: relative;
+    right: -160px;
+}
+
+.footer-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-button button {
+    width: 270px;
+    padding: 15px;
+    font-size: 18px;
+    background-color: rgb(0, 0, 93);
+    color: white;
+    border-radius: 50px;
+    border: 1px solid rgb(255, 252, 252);
+}
+
+.footer-button button a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-inner hr {
+    margin-top: 50px;
+}
+
+.footer-inner h1 {
+    text-align: center;
+    color: white;
+}
+
+.footer-button button:hover {
+    transform: scale(1.2);
+    transition: 0.2s ease-in-out;
+    background-color: rgb(1, 122, 7);
+}
+
+@media (max-width: 720px) {
+    .menu {
+        width: 50%;
+    }
+    .menu-list a {
+        font-size: 20px;
+    }
+    .container {
+        width: auto;
+        margin: 0 5px;
+    }
+    .icons img {
+        width: 55px;
+        height: 55px;
+        padding: 9px;
+    }
+    .home-title h1 {
+        font-size: 36px;
+    }
+    .home-title p {
+        font-size: 18px;
+    }
+    .home-title button {
+        font-size: 18px;
+        width: 200px;
+    }
+    .company {
+        display: block;
+    }
+    .company-title {
+        width: 100%;
+    }
+    .company-title h1 {
+        font-size: 32px;
+    }
+    .company-title p {
+        font-size: 18px;
+    }
+    .company-image {
+        width: 100%;
+    }
+    .company-image img {
+        width: 320px;
+        height: 250px;
+    }
+    .lawyer-inner h2 {
+        font-size: 32px;
+    }
+    .lawyer-inner h3 {
+        font-size: 18px;
+    }
+    .lawyer {
+        width: 96%;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .lawyer:hover {
+        transform: none;
+        transition: none;
+    }
+    .lawyer-list {
+        display: block;
+    }
+    .succes-inner h1 {
+        font-size: 32px;
+    }
+    .succes-inner p {
+        font-size: 18px;
+    }
+    .succes-imag img {
+        width: 100px;
+        height: 100px;
+    }
+    .succes-image img {
+        width: 94%;
+        margin-bottom: 60px;
+    }
+    .succes-image img:hover {
+        transform: none;
+    }
+    .succes-image {
+        display: block;
+    }
+    .succes-inner h2 {
+        margin-top: 10px;
+        font-size: 18px;
+        position: relative;
+        top: -50px;
+    }
+    .how-title h1 {
+        font-size: 32px;
+    }
+    .how-title p {
+        font-size: 15px;
+    }
+    .video-title h1 {
+        font-size: 32px;
+    }
+    .video-title p {
+        font-size: 18px;
+    }
+    .video-video iframe {
+        height: 300px;
+    }
+    .sub-title h1 {
+        font-size: 32px;
+    }
+    .sub-title p {
+        font-size: 18px;
+    }
+    .sub-input input {
+        font-size: 18px;
+        height: 50px;
+    }
+    .sub-input button {
+        margin-top: 30px;
+    }
+    .footer-title h2 {
+        font-size: 32px;
+    }
+    .footer-item {
+        display: block;
+    }
+    .footer-title {
+        width: 96%;
+        position: relative;
+        right: 0;
+    }
+    .footer-title p {
+        font-size: 18px;
+    }
+    .footer-map {
+        width: 96%;
+        position: relative;
+        right: 0;
+    }
+}
