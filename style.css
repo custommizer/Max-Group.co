@@ -637,6 +637,7 @@ header {
     }
     .company-image {
         width: 100%;
+        margin-left: 10px;
     }
     .company-image img {
         width: 320px;
