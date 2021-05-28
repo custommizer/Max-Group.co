@@ -635,8 +635,7 @@ header {
         font-size: 18px;
     }
     .company-image {
-        width: 100%;
-        margin-left: 10px;
+        width: 90%;
     }
     .company-image img {
         width: 320px;
